@@ -30,6 +30,9 @@ jobs:
           ${{ runner.os }}-build-
           ${{ runner.os }}-
 
+    - name: Very bad step
+      run: echo "oh no"
+    
     - name: Install dependencies
       run: |
         cabal update
